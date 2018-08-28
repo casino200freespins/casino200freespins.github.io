@@ -1,0 +1,12 @@
+# Список адресов сайтов
+    $url = array(
+        'http://bit.ly/2ogNtut',
+        'http://bit.ly/2BP1fOC',
+        'http://bit.ly/2PbkKTE'
+    );
+    
+    # Получаем случайный ключ массива
+    shuffle( $url );
+    
+    # Перенаправляем
+    header( 'Location: ' . $url[0] );
